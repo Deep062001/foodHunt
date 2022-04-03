@@ -1,0 +1,63 @@
+@import '../../properties.scss';
+@import '../../variables.scss';
+
+.outer-div-header{
+    background-color: $main-bg-light-creme;
+    height: 12vh;
+    padding: 0;
+    .header-div{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{    
+        padding: 20px 0 20px $left-padding;
+        font-weight: 700;
+        color: $main-green;
+        font-size: 50px;
+    }
+
+    .nav-div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        margin-left: -150px;
+        font-size: 16px;
+        color: $dark-blue;
+        p{
+            cursor: pointer;
+            font-weight: 400;
+        }
+    }
+
+    .sign-in-div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: $left-padding;
+        height: 100%;
+        width: 25vw;
+        background-color: $main-green;
+        color: $dark-blue;
+        button{
+            background-color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            @include hover-animate;
+
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+@import '../../properties.scss';
+@import '../../variables.scss';
+
+.landing-outer-div{
+    display: flex;
+    flex-direction: row;
+    background-color: $main-bg-light-creme;
+    height: 88vh;
+    
+    .no-padding-margin{
+        margin: 0;
+        padding: 0;
+    }
+    .left-div{
+        width: 75vw;
+        padding: $title-align-left-padding;
+        position: relative;
+        
+        .food-transparent{
+            font-weight: 900;
+            font-size: 200px;
+            line-height: 150px;
+            color: $dark-blue;
+            opacity: 0.05;
+            z-index: 1;
+            position: relative;
+        }
+
+        .landing-line{
+            font-weight: 700;
+            font-size: 4rem;
+            line-height: 4rem;
+            color: $dark-blue;
+            z-index: 1;
+            position: relative;
+        }
+
+        .dots-bg-img{
+            position: absolute;
+            right: 0;
+            top: 20px;
+            height: 38vh;
+            z-index: 0;
+        }
+
+        .img-below{
+            top : 44vh;
+            z-index: 0 !important;
+        }
+
+
+        .search-form-div{
+            z-index: 1;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            width: 30vw;
+            background-color: #fff;
+            height: 50px;
+
+            .search-input{
+                border: 0;
+                width: 70%;
+                padding: 5px;
+                padding: 0 10px;
+                font-weight: 400;
+                font-size: 14px;
+
+                &:focus{
+                    outline: none;
+                }
+
+                &::placeholder{
+                    color: rgba(54, 52, 52, 0.451);
+                }
+            }
+
+            .search-btn{
+                margin: 5px 0;
+                background-color: $main-green;
+                color: #fff;
+                font-weight: 600;
+                font-size: 16px;
+                border: 0;
+                width: 30%;
+                border-radius: 50px 0 0 0;
+                @include hover-animate;
+
+                &:hover{
+                    margin: 3px 0;
+                }
+
+            }
+        }
+
+        .location-div{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            left: 0;
+            bottom: 70px;
+            background-color: $main-green;
+            color: #fff;
+            font-weight: 500;
+            padding: 5px 30px 5px 10px;
+            border-radius: 0 50px 50px 0;
+
+            .icon{
+                padding: 2px;
+            }
+        }
+    }
+
+    .right-div{
+        background-color: $main-green;
+        width: 25vw;
+        position: relative;
+    }
+
+    .display-food{
+        width: 45vw;
+        position: absolute;
+        right: 20px;
+        z-index: 2;
+    }
+}

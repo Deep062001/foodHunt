@@ -1,0 +1,20 @@
+.Items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    column-gap: 50px;
+    background-color: #FFF5EC;
+
+    .Food {
+
+        height: 100%;
+        width: 65%;
+    }
+
+    .Form {
+        width: 35%;
+        height: 100%;
+    }
+}

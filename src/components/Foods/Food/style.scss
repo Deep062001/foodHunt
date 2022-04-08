@@ -1,0 +1,90 @@
+.food-card-div {
+    padding: 0;
+    width: 250px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    row-gap: 10px;
+    box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5) !important;
+
+    .food-img {
+        top: 0;
+        padding: 0;
+        width: 250px;
+
+    }
+
+    .text-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 250px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .name {
+
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        /* or 133% */
+
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+
+        color: #2E266F;
+    }
+
+    .price {
+
+        left: 420px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        /* or 133% */
+
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+
+        color: #35CD8C;
+
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+
+        button {
+            background-color: #35CD8C;
+            color: white;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.btn-flat {
+    background-color: #35CD8C;
+    color: white;
+}

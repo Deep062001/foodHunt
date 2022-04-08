@@ -1,0 +1,66 @@
+@import '../../properties.scss';
+@import '../../variables.scss';
+
+.form {
+    margin-top: 70px;
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 10px;
+
+    .heading1 {
+        color: #35CD8C;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+
+        /* or 129% */
+
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        width: 360px;
+    }
+
+    .button1 {
+        background-color: #35CD8C;
+        color: white;
+
+
+    }
+
+    .form1 {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: left;
+        row-gap: 10px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        height: 300px;
+        width: 300px;
+    }
+
+    .label {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* or 67% */
+
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+
+        color: #2E266F;
+
+    }
+}

@@ -1,0 +1,9 @@
+@import '../../properties.scss';
+@import '../../variables.scss';
+
+.outer-div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: $main-padding;
+}

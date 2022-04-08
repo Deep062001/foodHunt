@@ -1,9 +1,11 @@
 import React from 'react';
 import ShopCard from '../ShopCard/ShopCard';
-
+import './ShopsDiv.scss';
 const ShopsDiv = () => {
   return (
-    <div style={{padding: '20px'}}>
+    <div className='outer-div'>
+        <ShopCard />
+        <ShopCard />
         <ShopCard />
     </div>
   )

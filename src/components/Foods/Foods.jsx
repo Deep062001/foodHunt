@@ -10,14 +10,15 @@ const Foods = () => {
    <div className='foodpage'>
    <div className='heading'> Explore The Food
    </div>
+
     <div className='grid'>
-  {Array.from({ length: 8}).map((_, idx) => (
-    
-    <div className='food'><Food1/></div>
-    
-    ))}
-</div>
-</div>
+    {foodPosts.map((foodPost) => (
+      console.log(foodPost),
+      <div className='food' key = {foodPost._id}><Food1 foodPost = {foodPost}/></div>
+  ))}
+    </div>
+  
+    </div>
 
   )
 }

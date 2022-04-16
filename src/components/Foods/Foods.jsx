@@ -12,10 +12,16 @@ const Foods = () => {
    </div>
 
     <div className='grid'>
-    {foodPosts.map((foodPost) => (
-      console.log(foodPost),
-      <div className='food' key = {foodPost._id}><Food1 foodPost = {foodPost}/></div>
-  ))}
+    {foodPosts.map((foodPost) => {
+      console.log(foodPost);
+      return <div className='food' key = {foodPost._id}><Food1 foodPost = {foodPost}/></div>
+    })}
+
+    {/* {
+      foodPosts.forEach(post=>{
+        console.log(post);
+      })
+    } */}
     </div>
   
     </div>

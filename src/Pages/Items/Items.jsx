@@ -1,7 +1,6 @@
 import React from 'react';
 import Forms from "../../components/Form/Form";
 import Foods from "../../components/Foods/Foods";
-import { Container, Row, Col } from 'react-bootstrap';
 import Header from '../../components/Header/Header';
 import './Items.scss';
 const Items = () => {

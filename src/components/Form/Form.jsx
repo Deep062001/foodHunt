@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import {Form,Button} from 'react-bootstrap';
 import FileUploader from './FileUploader';
 import { useDispatch } from 'react-redux';
 import FileBase from 'react-file-base64';

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import {Form,Button} from 'react-bootstrap';
 import FileUploader from '../Form/FileUploader';
  import './Form2.scss';
 const Forms = () => {

@@ -7,4 +7,4 @@ export default (foodPosts = [], action) => {
       default:
         return foodPosts;
     }
-  };
+};

@@ -6,7 +6,6 @@ import './Items.scss';
 const Items = () => {
   return (
     <div className='explore-page'>
-    <div> <Header /></div>
     <div className='Items'>
     
     <div className='Food'> 

@@ -11,12 +11,16 @@ const ShopCard = () => {
           <div className='text-div'>
             <h3>Fire Water</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-            <div className='location-div'>
+            {/* <div className='location-div'>
+              <LocationOnIcon className='icon'/> 
+              <p>Kashmere Gate</p>
+            </div> */}
+          </div>
+          <div className='explore-dish-div'>
+          <div className='location-div'>
               <LocationOnIcon className='icon'/> 
               <p>Kashmere Gate</p>
             </div>
-          </div>
-          <div className='explore-dish-div'>
             <button>Food Items</button>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React ,{useEffect} from 'react'
 import Header from './components/Header/Header'
 import MainPage from './Pages/MainPage/MainPage'
+import ShopsPage from './Pages/ShopsPage/ShopsPage'
 import { useDispatch } from 'react-redux';
 import {getFoodPost} from './actions/foodPost';
 import './App.scss';
@@ -15,10 +16,12 @@ const App = () => {
   }, [dispatch])
   return (
     <div>
+    
             <Router>
+                <Header />
                 <Routes>
-                <Route path="/" exact element={<MainPage />} />
-               
+                    <Route path="/" exact element={<MainPage />} />
+                    <Route path="/shops" exact element={<ShopsPage />} />
                     <Route path="/items" exact element={<Items />} />
                     <Route path="/suggest" exact element={<Suggest/>} />
                 </Routes>

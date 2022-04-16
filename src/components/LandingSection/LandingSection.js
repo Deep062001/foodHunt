@@ -1,5 +1,6 @@
 import React from 'react';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { NavLink } from "react-router-dom";
 import Pakode from '../../assets/pakode.png'
 import dotsBG from '../../assets/dotsBG.png'
 import './LandingSection.scss';
@@ -25,8 +26,8 @@ const LandingSection = () => {
         </p>
         <form onSubmit={handleSearch}>
             <div className='search-form-div'>
-                <input className='search-input' placeholder='Search Food Addas, Food' />
-                <button className='search-btn' type='submit' > GO </button>
+                {/* <input className='search-input' placeholder='Search Food Addas, Food' /> */}
+                <NavLink className='search-btn' to="/shops">GO</NavLink>
             </div>
         </form>
         <div className='location-div'>

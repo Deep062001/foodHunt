@@ -7,9 +7,6 @@ import './suggest.scss';
 const Suggest = () => {
   return (
     <div  className='page3'>
-    <div>
-    <Header />
-    </div>
     <div className='suggest'>
 
     <div >

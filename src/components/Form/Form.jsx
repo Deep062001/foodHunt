@@ -19,6 +19,7 @@ const dispatch = useDispatch();
     <div className="form">
     <div className='heading1' style={{textAlign: "center"}}> What's Your Favourite Food ??</div>
       <form className='form1' onSubmit={handleSubmit}>
+      <div className='input-div'>
       <label className='label'>
     Name of The Food Item:
    
@@ -27,10 +28,10 @@ const dispatch = useDispatch();
     type="text"
     value={foodPostData.name}
     onChange={(e) => setFoodPostData({...foodPostData, name : e.target.value})}
-  />
+  /></div>
 
 
-  
+  <div className='input-div'>
   <label className='label'>
 
     Price of The Food Item: 
@@ -40,6 +41,7 @@ const dispatch = useDispatch();
     value={foodPostData.price}
     onChange={(e) =>  setFoodPostData({...foodPostData, price : e.target.value})}
   />
+  </div>
   <div><FileBase type="file" multiple={false} onDone={({ base64 }) => setFoodPostData({ ...foodPostData, selectedFile: base64 })} /></div>
 
   

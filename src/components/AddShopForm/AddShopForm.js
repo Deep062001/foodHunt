@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
 import FileBase from 'react-file-base64';
+import { useDispatch } from 'react-redux';
+import {createShopPost} from '../../actions/shopPost';
 import './AddShopForm.scss';
 
 const shopObj = {name: '',  description: '',location: '', tags: '', selectedFile: '' };
 const AddShopForm = () => {
     const [shopData, setShopData] = useState({...shopObj});
- 
+    const dispatch = useDispatch();
+
     function handleSubmit(e) {
        e.preventDefault();
+       dispatch(createShopPost(shopData));
     } 
     
     function handleChange(e) {

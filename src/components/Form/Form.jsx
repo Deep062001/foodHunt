@@ -5,13 +5,14 @@ import { useDispatch } from 'react-redux';
 import FileBase from 'react-file-base64';
 import { createFoodPost } from '../../actions/foodPost';
  import './form.scss';
-const Forms = () => {
+const Forms = (props) => {
   const[ foodPostData, setFoodPostData] = useState({
-    name : '', price : '', selectedFile : ''
+    name : '', price : '', selectedFile : '', shop_id: props.shopID
   });
 const dispatch = useDispatch();
   const handleSubmit = (e) =>{
     e.preventDefault();
+    console.log(foodPostData);
     dispatch(createFoodPost(foodPostData));
 
   };

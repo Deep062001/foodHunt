@@ -18,6 +18,7 @@ const App = () => {
                     <Route path="/shops" exact element={<ShopsPage />} />
                     <Route path="/items" exact element={<Items />} />
                     <Route path="/suggest" exact element={<Suggest/>} />
+                    <Route exact path="shops/:shopID" element={<Items/>} />
                 </Routes>
             </Router>
        

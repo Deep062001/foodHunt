@@ -8,6 +8,17 @@ export const getFoodPost =() => async(dispatch) =>{
         console.log(error.message);
     }
 }
+
+export const getFoodPostbyShopID =(shopID) => async(dispatch) =>{
+    try {
+        const {data} = await api.fetchPostsbyShopID(shopID);
+        dispatch({type :'FETCH_BY_SHOP', payload : data})
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+
+
 export const createFoodPost = (foodPost) =>async(dispatch) => {
     try {
         const {data} = await api.createPost(foodPost);
@@ -17,6 +28,8 @@ export const createFoodPost = (foodPost) =>async(dispatch) => {
         console.log(error.message);
     }
 }
+
+
 export const likeFoodPost = (id) =>async(dispatch) => {
     try {
         const {data} = await api.likePost(id);
@@ -26,6 +39,8 @@ export const likeFoodPost = (id) =>async(dispatch) => {
         console.log(error.message);
     }
 }
+
+
 export const deleteFoodPost = (id) =>async(dispatch) => {
     try {
         await api.deletePost(id);
@@ -35,6 +50,8 @@ export const deleteFoodPost = (id) =>async(dispatch) => {
         console.log(error.message);
     }
 }
+
+
 export const dislikeFoodPost = (id) =>async(dispatch) => {
     try {
         const {data} = await api.dislikePost(id);

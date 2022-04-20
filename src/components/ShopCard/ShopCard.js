@@ -1,9 +1,16 @@
 import React from 'react'
 import Pizza from '../../assets/pizza2.png';
+import { useNavigate, useParams } from 'react-router-dom';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import './ShopCard.scss';
 
 const ShopCard = ({shopData}) => {
+
+  const navigate = useNavigate();
+  
+  function showFoodItems () {
+    navigate(`${shopData._id}`);
+  }
   return (
     <div className='outer-card-div'>
         <img className='shop-img' src={shopData.selectedFile} alt={shopData.name} />
@@ -21,7 +28,7 @@ const ShopCard = ({shopData}) => {
               <LocationOnIcon className='icon'/> 
               <p>{shopData.location}</p>
             </div>
-            <button>Food Items</button>
+            <button onClick={showFoodItems}>Food Items</button>
           </div>
         </div>
     </div>

@@ -1,7 +1,11 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (foodPosts = [], action) => {
     switch (action.type) {
       case 'FETCH_ALL':
         return action.payload;
+      case 'FETCH_BY_SHOP':
+        return action.payload;
+        //return foodPosts.filter((foodPost) => (foodPost.shop_id !== action.payload));  
       case 'CREATE':
           return [...foodPosts,action.payload];
       case 'UPDATE':

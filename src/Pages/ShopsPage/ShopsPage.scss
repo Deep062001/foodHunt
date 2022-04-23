@@ -4,8 +4,11 @@
 .shops-page-outer-div{
     background-color: $main-bg-light-creme;
     padding: $title-align-left-padding;
+    padding-top: 30px;
     min-height: 88vh;
     width: 100vw;
+
+    
 
     @media screen and (max-width:1000px) {
         padding: $title-align-left-padding-small;

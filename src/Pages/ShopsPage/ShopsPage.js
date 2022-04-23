@@ -15,7 +15,6 @@ const ShopsPage = () => {
   return (
     <div className='shops-page-outer-div'>
         <ShopsDiv />
-
         <AddShopForm />
     </div>
   )

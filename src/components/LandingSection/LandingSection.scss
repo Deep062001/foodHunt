@@ -157,6 +157,7 @@
 
 
     @media screen and (max-width:600px) {
+        height: 630px;
 
         .left-div{
             padding: $title-align-left-padding-small;
@@ -176,6 +177,7 @@
                 position: relative;
                 margin-top: 40px;
                 margin-left: -30px;
+                width: fit-content;
             }
 
             .dots-bg-img{
@@ -191,7 +193,7 @@
 
         .display-food{
             width: 350px;
-            bottom: 20px;
+            bottom: 45px;
         }
     }  
 

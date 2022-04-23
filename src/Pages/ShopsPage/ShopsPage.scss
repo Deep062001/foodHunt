@@ -3,5 +3,15 @@
 
 .shops-page-outer-div{
     background-color: $main-bg-light-creme;
+    padding: $title-align-left-padding;
     min-height: 88vh;
+    width: 100vw;
+
+    @media screen and (max-width:1000px) {
+        padding: $title-align-left-padding-small;
+    }
+
+    @media screen and (max-width:470px) {
+        padding: 10px;
+    }
 }

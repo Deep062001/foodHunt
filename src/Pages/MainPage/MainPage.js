@@ -5,7 +5,7 @@ const MainPage = () => {
   return (
     <div>
       <LandingSection/> 
-      <ShopsDiv/>
+      {/* <ShopsDiv/> */}
     </div>
   )
 }

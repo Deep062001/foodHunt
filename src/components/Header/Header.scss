@@ -26,6 +26,10 @@
         font-weight: 700;
         color: $main-green;
         font-size: 50px;
+
+        @media screen and (max-width:1000px) {
+            padding-left: $title-align-left-padding-small;
+        }   
     }
 
     .nav-div{
@@ -48,9 +52,13 @@
                 font-weight: 500;
             }
         }
+
+        @media screen and (max-width:1000px) {
+            display: none;
+        }
     }
 
-    .sign-in-div{
+    .nav-btn-div{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -60,20 +68,46 @@
         width: 25vw;
         background-color: $main-green;
         color: $dark-blue;
-        button{
-            background-color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 500;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            @include hover-animate;
 
-            &:hover{
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                font-weight: 500;
+        .link{
+            color: $dark-blue;
+            text-decoration: none;
+        }
+
+        button{
+            visibility: hidden;
+
+            @media screen and (max-width:1000px) {
+                visibility: visible;
             }
         }
+
+        @media screen and (max-width:1000px) {
+            padding-right: $title-align-left-padding-small;
+        }  
+        
+        // button{
+        //     background-color: #fff;
+        //     padding: 10px;
+        //     border: none;
+        //     border-radius: 10px;
+        //     font-size: 16px;
+        //     font-weight: 500;
+        //     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        //     @include hover-animate;
+
+        //     &:hover{
+        //         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        //         font-weight: 500;
+        //     }
+        // }
+    }
+
+    @media screen and (max-width:470px) {
+
+        .logo{
+            font-size: 40px;
+        }
+
     }
 }

@@ -1,20 +1,20 @@
+@import '../../properties.scss';
+@import '../../variables.scss';
 .Items {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-
+    
+    width: 100vw;
+    background-color: $main-bg-light-creme;
+    padding: $title-align-left-padding;
     column-gap: 50px;
-    background-color: #FFF5EC;
+    padding-top: 30px;
+    min-height: 88vh;
 
-    .Food {
+    
+@media screen and (max-width:1000px) {
+    padding: $title-align-left-padding-small;
+}
 
-        height: 100%;
-        width: 65%;
-    }
-
-    .Form {
-        width: 35%;
-        height: 100%;
-    }
+@media screen and (max-width:470px) {
+    padding: 10px;
+}
 }

@@ -54,7 +54,7 @@ const Header = () => {
             
             <NavLink className='link' to="/"><p>Home</p></NavLink>
             <NavLink className='link' to="/shops"><p>Food Addas</p></NavLink>
-            <NavLink className='link' to="/suggest"><p>Suggest Places</p></NavLink>
+            
 
           </div>
         </div>
@@ -93,7 +93,7 @@ const Header = () => {
                   >
                     <NavLink className='link' to="/"><MenuItem onClick={handleClose}><p>Home</p></MenuItem></NavLink>
                     <NavLink className='link' to="/shops"><MenuItem onClick={handleClose}><p>Food Addas</p></MenuItem></NavLink>
-                    <NavLink className='link' to="/suggest"><MenuItem onClick={handleClose}><p>Suggest Places</p></MenuItem></NavLink>
+                    
                   </MenuList>
                 </ClickAwayListener>
               </Paper>

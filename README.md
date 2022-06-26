@@ -1,6 +1,6 @@
 **FoodHunt is a web application that allows the people to find the best Eating spots and the popular food items in and around the College Campus
 Like, dislike and upload their favourite food items and also suggest Food pots available around the campus to be added by the admin
-TECHNOLOGY USED -:
+TECHNOLOGY USED :-
 
 Frontend -: React-Redux
 

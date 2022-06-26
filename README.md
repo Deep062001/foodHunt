@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+FoodHunt is a web application that allows the people to find the best Eating spots and the popular food items in and around the College Campus
+Like, dislike and upload their favourite food items and also suggest Food pots available around the campus to be added by the admin
+TECHNOLOGY USED -:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Frontend -: React-Redux
 
-## Available Scripts
+Backend -: Node.js
 
-In the project directory, you can run:
+Database -: MongoDB
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+UI/UX
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Screenshot (352)](https://user-images.githubusercontent.com/53971925/175819451-bacb16d6-71aa-4073-9e0e-45a4e48b3d7b.png)
 
-### `npm test`
+![Screenshot (353)](https://user-images.githubusercontent.com/53971925/175819503-24b573fd-984a-48dd-bc68-2925eb9f8605.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot (354)](https://user-images.githubusercontent.com/53971925/175819537-5a0450a6-5bad-4418-96fb-a496d534ecfe.png)
 
-### `npm run build`
+![Screenshot (355)](https://user-images.githubusercontent.com/53971925/175819512-2f0d49dc-6435-47b3-8170-1db5b2ce2594.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot (356)](https://user-images.githubusercontent.com/53971925/175819576-0d1e9678-7261-48ae-afd5-6bfc05b7062d.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
